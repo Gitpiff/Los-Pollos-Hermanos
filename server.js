@@ -16,7 +16,7 @@ app.use("/menu", require("./routes/menuRoute"))
 
 
 //Connect to Database
-mongoose.connect(mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true }), () => console.log("connected to database"))
+mongoose.connect(process.env.MONGODB_URI, () => console.log("connected to database"))
 
 
 //     //Middleware and Next
